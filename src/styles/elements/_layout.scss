@@ -1,0 +1,31 @@
+@use '../tools/mixins';
+
+.drawer-container {
+   display: flex;
+   flex: 1;
+   overflow: hidden;
+   height: inherit;
+   background-color: #eceff1;
+}
+
+.boxed-layout {
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+}
+
+.main {
+   height: 100%;
+   flex: 1;
+   overflow: auto;
+   padding: 10px;
+}
+
+/*
+display: 'flex', flexDirection: 'column', minHeight: '100%' */
+.menu {
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+   padding: 5px 0;
+}
