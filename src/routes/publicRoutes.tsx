@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
-import { PublicLayout } from '../components/layout/public/publicLayout';
-import { LoginPage } from '../views/login';
+import { PublicLayout } from '../components/layout/public';
+import { LoginPage } from '../views/loginPage';
 
 export const PublicRoutes = () => {
    return (

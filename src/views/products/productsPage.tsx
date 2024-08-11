@@ -88,11 +88,7 @@ export const ProductsPage = () => {
    return (
       <>
          <Container>
-            <AppBar
-               position="sticky"
-               elevation={0}
-               variant="outlined"
-               sx={{ backgroundColor: '#ECEFF1', color: 'inherit', borderColor: 'transparent' }}>
+            <AppBar className="page-app-bar" position="sticky" elevation={0} variant="outlined">
                <Box sx={{ display: 'flex', px: 1 }}>
                   <Typography variant="h5" component="div" sx={{ flexGrow: 1, py: 1 }}>
                      Products

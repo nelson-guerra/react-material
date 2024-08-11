@@ -1,4 +1,4 @@
-export const ConstructionIcon = () => {
+export const ConstructionSvg = () => {
    return (
       <svg
          id="Layer_1"

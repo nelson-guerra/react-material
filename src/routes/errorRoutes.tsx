@@ -1,13 +1,13 @@
 import { Route, Routes } from 'react-router-dom';
-import { ErrorsLayout } from '../components/layout/errorsLayout';
-import { Error404 } from '../views/errors/error404';
+import { ErrorLayout } from '../components/layout/error';
+import { NotFound } from '../components/notFound';
 
 export const ErrorRoutes = () => {
    return (
       <Routes>
-         <Route element={<ErrorsLayout />}>
-            <Route path="404" element={<Error404 />} />
-            <Route path="*" element={<Error404 />} />
+         <Route element={<ErrorLayout />}>
+            <Route path="not-found" element={<NotFound />} />
+            <Route path="*" element={<NotFound />} />
          </Route>
       </Routes>
    );

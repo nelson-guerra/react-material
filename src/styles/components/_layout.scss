@@ -1,0 +1,55 @@
+@use '../tools/mixins';
+@use '../settings/variables';
+
+.protected-layout {
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+}
+
+.public-layout {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+
+.menu {
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+   padding: 5px 0;
+}
+
+.menu-item {
+   border-radius: 16px;
+   color: 'inherit';
+
+   &:hover {
+      background-color: variables.$menu-hover-color;
+   }
+
+   &.Mui-selected {
+      background-color: variables.$menu-selected-color;
+   }
+}
+
+.container {
+   display: flex;
+   flex: 1;
+   overflow: hidden;
+   height: inherit;
+   background-color: variables.$container-background-color;
+}
+
+.main {
+   height: 100%;
+   flex: 1;
+   overflow: auto;
+   padding: 10px;
+}
+
+.page-app-bar {
+   background-color: variables.$container-background-color;
+   color: variables.$text-color;
+   border-color: transparent;
+}

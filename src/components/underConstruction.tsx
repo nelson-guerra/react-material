@@ -1,7 +1,7 @@
 import Button from '@mui/material/Button';
 import { Link as RouterLink } from 'react-router-dom';
 import { Result } from './result';
-import { ConstructionIcon } from './icons/constructionIcon';
+import { ConstructionSvg } from './icons/constructionSvg';
 
 export const UnderConstruction = () => {
    return (
@@ -11,7 +11,7 @@ export const UnderConstruction = () => {
                {'Back to home'}
             </Button>
          }
-         image={<ConstructionIcon />}
+         image={<ConstructionSvg />}
          maxWidth="sm"
          subTitle={'We are actively working on this page.'}
          title={'Under constructions!'}

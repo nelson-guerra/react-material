@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import { PrivateRoutes } from './privateRoutes';
+import { ProtectedRoutes } from './protectedRoutes';
 import { useAppSelector } from '../store/hooks';
 import { PublicRoutes } from './publicRoutes';
 import { ErrorRoutes } from './errorRoutes';
@@ -13,7 +13,7 @@ export const AppRoutes: FC = () => {
          <Route path="error/*" element={<ErrorRoutes />} />
          {isAuthorized ? (
             <>
-               <Route path="/*" element={<PrivateRoutes />} />
+               <Route path="/*" element={<ProtectedRoutes />} />
             </>
          ) : (
             <>

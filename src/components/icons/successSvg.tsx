@@ -1,4 +1,4 @@
-export const SuccessIcon = () => {
+export const SuccessSvg = () => {
    return (
       <svg
          id="Layer_1"

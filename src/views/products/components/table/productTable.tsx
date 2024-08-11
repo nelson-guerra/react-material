@@ -68,7 +68,6 @@ export const ProductTable = ({ processing, onDelete, onEdit, products = [] }: Pr
             onRowsPerPageChange={handleChangeRowsPerPage}
             showFirstButton={true}
             showLastButton={true}
-            disabled={true}
          />
       </>
    );

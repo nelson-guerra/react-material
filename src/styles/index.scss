@@ -1,9 +1,8 @@
 // Generic
-@use 'generic/normalize';
-@use 'generic/box-sizing';
+@use 'base/generic';
+@use 'base/normalize';
 
-// Elements
-@use 'elements/body';
-@use 'elements/layout';
-@use 'elements/login';
-@use 'elements/products';
+// Components
+@use 'components/layout';
+@use 'components/login';
+@use 'components/products';

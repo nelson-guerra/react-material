@@ -1,0 +1,36 @@
+@use '../tools/mixins';
+
+:root {
+   --color-background: #eceff1;
+}
+
+:root {
+   --h1-font-size: 2rem;
+   --h2-font-size: 1.5rem;
+   --h3-font-size: 1.25rem;
+   --base-font-size: 0.9rem;
+   --small-font-size: 0.75rem;
+
+   @include mixins.media-query-md() {
+      --h1-font-size: 2.5rem;
+      --h2-font-size: 1.75rem;
+      --h3-font-size: 1.5rem;
+      --base-font-size: 1rem;
+      --small-font-size: 0.8rem;
+   }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Lato&display=swap');
+$base-font-family: 'Lato', 'san-serif';
+
+$base-font-size: var(--base-font-size);
+
+$text-color: #333;
+
+$text-field-error-message-color: #ff0000;
+
+$container-background-color: var(--color-background);
+
+$menu-selected-color: var(--color-background);
+
+$menu-hover-color: #f5f5f5;

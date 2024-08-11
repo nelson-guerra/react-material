@@ -1,4 +1,4 @@
-export const ErrorIcon = () => {
+export const ErrorSvg = () => {
    return (
       <svg
          id="Layer_1"

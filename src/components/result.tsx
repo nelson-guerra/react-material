@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import { Box, Container, Typography } from '@mui/material';
-import { ErrorIcon } from './icons/errorIcon';
-import { SuccessIcon } from './icons/successIcon';
+import { ErrorSvg } from './icons/errorSvg';
+import { SuccessSvg } from './icons/successSvg';
 import { SvgContainer } from './svgContainer';
 
 type ResultImageProps = {
@@ -14,9 +14,9 @@ const ResultImage = ({ customImage, status }: ResultImageProps) => {
 
    if (!image) {
       if (status === 'error') {
-         image = <ErrorIcon />;
+         image = <ErrorSvg />;
       } else if (status === 'success') {
-         image = <SuccessIcon />;
+         image = <SuccessSvg />;
       }
    }
 
